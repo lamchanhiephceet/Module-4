@@ -2,23 +2,15 @@
   Created by IntelliJ IDEA.
   User: HN
   Date: 9/14/2020
-  Time: 4:33 PM
+  Time: 4:17 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <title>Email Validation</title>
+    <title>Success</title>
 </head>
 <body>
-
-<h1>Email Validate</h1>
-<h3 style="color:red">${message}</h3>
-
-<form action="validate" method="post">
-  <input type="text" name="email"><br>
-  <input type="submit" value="Validate">
-</form>
-
+<h3>Hi ${email}</h3>
 </body>
 </html>
