@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a6204d1-bbc7-4884-b6a7-06572c6be1ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/configuration/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/controllers/PostsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/controllers/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/forms/LoginForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/models/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/repositories/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/repositories/PostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/services/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/services/NotificationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/services/PostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/services/PostServiceJpa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/services/PostServiceStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/services/UserServiceJpa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/java/com/codegym/blog/services/UserServiceStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/public/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/public/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/public/img/page-not-found.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/public/img/sad-face.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/public/img/site-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/public/img/sunglasses-face.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/public/js/blog-scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/public/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/error/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/error/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/error/default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/posts/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/posts/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/posts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/posts/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/users/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/users/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-jpa-simple-blog/src/main/webapp/WEB-INF/views/users/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/cms/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/cms/ApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/cms/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/cms/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/cms/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/cms/repository/CustomerRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/cms/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/cms/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/cms/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Access_modifier/BT_Access_modifier.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Access_modifier/out/production/BT_Access_modifier/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Access_modifier/src/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Access_modifier/src/TestCircle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/java-adapter-collection.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/src/com/codegym/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/src/com/codegym/CollectionOperations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/src/com/codegym/CollectionUtilsAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ApDungAdapter/src/com/codegym/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/BT_Circle_Cylinder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/CircleandCylinderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/Cylinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/out/production/BT_Circle_Cylinder/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/out/production/BT_Circle_Cylinder/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/out/production/BT_Circle_Cylinder/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/out/production/BT_Circle_Cylinder/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/out/production/BT_Circle_Cylinder/BT_Circle_Cylinder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/out/production/BT_Circle_Cylinder/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/out/production/BT_Circle_Cylinder/CircleandCylinderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Circle_Cylinder/out/production/BT_Circle_Cylinder/Cylinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileNhiPhan/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileNhiPhan/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileNhiPhan/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileNhiPhan/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileNhiPhan/BT_CopyFileNhiPhan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileNhiPhan/out/production/BT_CopyFileNhiPhan/CopyFileBinary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileNhiPhan/src/CopyFileBinary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileText/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileText/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileText/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileText/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileText/BT_CopyFileText.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileText/out/production/BT_CopyFileText/CopyFileText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CopyFileText/src/CopyFileText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CrawlTinTucOptional/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CrawlTinTucOptional/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CrawlTinTucOptional/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CrawlTinTucOptional/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CrawlTinTucOptional/BT_CrawlTinTucOptional.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CrawlTinTucOptional/out/production/BT_CrawlTinTucOptional/CrawlNewsExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_CrawlTinTucOptional/src/CrawlNewsExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_DocFileCsv_Optional/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_DocFileCsv_Optional/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_DocFileCsv_Optional/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_DocFileCsv_Optional/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_DocFileCsv_Optional/BT_DocFileCsv_Optional.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_DocFileCsv_Optional/out/production/BT_DocFileCsv_Optional/ReadFileCsv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_DocFileCsv_Optional/out/production/BT_DocFileCsv_Optional/thread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_DocFileCsv_Optional/src/ReadFileCsv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Fizz_Buzz/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Fizz_Buzz/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Fizz_Buzz/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Fizz_Buzz/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Fizz_Buzz/BT_Fizz_Buzz.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Fizz_Buzz/out/production/BT_Fizz_Buzz/FizzBuzzTranslate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Fizz_Buzz/out/production/BT_Fizz_Buzz/FizzBuzzTranslateTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Fizz_Buzz/src/FizzBuzzTranslate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Fizz_Buzz/src/FizzBuzzTranslateTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/BT_HienThiSoChanLe.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/out/production/BT_HienThiSoChanLe/BT_TaiLop$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/out/production/BT_HienThiSoChanLe/BT_TaiLop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/out/production/BT_HienThiSoChanLe/EvenThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/out/production/BT_HienThiSoChanLe/OddThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/out/production/BT_HienThiSoChanLe/TestThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/src/EvenThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/src/OddThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_HienThiSoChanLe/src/TestThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Kiem tra dau ngoac trong bieu thuc su dung Stack/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Kiem tra dau ngoac trong bieu thuc su dung Stack/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Kiem tra dau ngoac trong bieu thuc su dung Stack/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Kiem tra dau ngoac trong bieu thuc su dung Stack/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Kiem tra dau ngoac trong bieu thuc su dung Stack/BT_Kiem tra dau ngoac trong bieu thuc su dung Stack.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Kiem tra dau ngoac trong bieu thuc su dung Stack/out/production/BT_Kiem tra dau ngoac trong bieu thuc su dung Stack/Checksymboy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_Kiem tra dau ngoac trong bieu thuc su dung Stack/src/Checksymboy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/BT_QuanLySanPhamLuuRaFileNhiPhan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/out/production/BT_QuanLySanPhamLuuRaFileNhiPhan/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/out/production/BT_QuanLySanPhamLuuRaFileNhiPhan/Stock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/out/production/BT_QuanLySanPhamLuuRaFileNhiPhan/StockIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/out/production/BT_QuanLySanPhamLuuRaFileNhiPhan/StockManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/src/Stock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/src/StockIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/src/StockManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_QuanLySanPhamLuuRaFileNhiPhan/stock.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_SuDungLopIllegalTriangleException/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_SuDungLopIllegalTriangleException/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_SuDungLopIllegalTriangleException/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_SuDungLopIllegalTriangleException/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_SuDungLopIllegalTriangleException/BT_SuDungLopIllegalTriangleException.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_SuDungLopIllegalTriangleException/out/production/BT_SuDungLopIllegalTriangleException/IlligalTriangleException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_SuDungLopIllegalTriangleException/out/production/BT_SuDungLopIllegalTriangleException/TriangleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_SuDungLopIllegalTriangleException/src/IlligalTriangleException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_SuDungLopIllegalTriangleException/src/TriangleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/BT_TaoThreadDonGian.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/out/production/BT_TaoThreadDonGian/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/out/production/BT_TaoThreadDonGian/NumberGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/out/production/BT_TaoThreadDonGian/Thread2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/src/NumberGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TaoThreadDonGian/src/Thread2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/java-facade-random.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/src/com/codegym/ListFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/src/com/codegym/ListPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/src/com/codegym/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/src/com/codegym/RandomList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/src/com/codegym/RandomListFacade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_TrienKhaiFacadePattern/src/com/codegym/RandomNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateSoDienThoai/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateSoDienThoai/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateSoDienThoai/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateSoDienThoai/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateSoDienThoai/BT_ValidateSoDienThoai.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateSoDienThoai/out/production/BT_ValidateSoDienThoai/PhoneNumberExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateSoDienThoai/out/production/BT_ValidateSoDienThoai/PhoneNumberTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateSoDienThoai/src/PhoneNumberExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateSoDienThoai/src/PhoneNumberTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateTenLopHoc/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateTenLopHoc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateTenLopHoc/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateTenLopHoc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateTenLopHoc/BT_ValidateTenLopHoc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateTenLopHoc/out/production/BT_ValidateTenLopHoc/ClassNameExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateTenLopHoc/out/production/BT_ValidateTenLopHoc/ClassNameTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateTenLopHoc/src/ClassNameExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_ValidateTenLopHoc/src/ClassNameTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/BT_cai_dat_Thuat_toan_sap_xep_noi_bot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/out/production/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/BubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/out/production/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/out/production/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/out/production/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/src/BubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_Thuat_toan_sap_xep_noi_bot/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/BT_cai_dat_thuat_toan_sap_xep_chen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/out/production/BT_cai_dat_thuat_toan_sap_xep_chen/insertionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/out/production/BT_cai_dat_thuat_toan_sap_xep_chen/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/out/production/BT_cai_dat_thuat_toan_sap_xep_chen/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/out/production/BT_cai_dat_thuat_toan_sap_xep_chen/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/src/insertionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_cai_dat_thuat_toan_sap_xep_chen/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_chuyen_he_thap_phan_sang_nhi_phan/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_chuyen_he_thap_phan_sang_nhi_phan/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_chuyen_he_thap_phan_sang_nhi_phan/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_chuyen_he_thap_phan_sang_nhi_phan/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_chuyen_he_thap_phan_sang_nhi_phan/BT_chuyen_he_thap_phan_sang_nhi_phan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_chuyen_he_thap_phan_sang_nhi_phan/out/production/BT_chuyen_he_thap_phan_sang_nhi_phan/DecimalToBinary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_chuyen_he_thap_phan_sang_nhi_phan/src/DecimalToBinary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/out/production/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/integerReverserThroughStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/out/production/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/stringReverserThroughStack$Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/out/production/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/stringReverserThroughStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/src/integerReverserThroughStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dao_nguoc_phan_tu_mang_so_nguyen_sd_Stack/src/stringReverserThroughStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dem_lan_xuat_hien_tu_trong_chuoi_sd_Map/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dem_lan_xuat_hien_tu_trong_chuoi_sd_Map/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dem_lan_xuat_hien_tu_trong_chuoi_sd_Map/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dem_lan_xuat_hien_tu_trong_chuoi_sd_Map/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dem_lan_xuat_hien_tu_trong_chuoi_sd_Map/BT_dem_lan_xuat_hien_tu_trong_chuoi_sd_Map.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dem_lan_xuat_hien_tu_trong_chuoi_sd_Map/out/production/BT_dem_lan_xuat_hien_tu_trong_chuoi_sd_Map/countChar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_dem_lan_xuat_hien_tu_trong_chuoi_sd_Map/src/countChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/BT_interface Colorable.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/out/production/BT_interface Colorable/Colorable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/out/production/BT_interface Colorable/Square.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/out/production/BT_interface Colorable/SquareColorableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/src/Colorable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/src/Square.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interface Colorable/src/SquareColorableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/BT_interfaceResizeable.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/out/production/BT_interfaceResizeable/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/out/production/BT_interfaceResizeable/META-INF/BT_interfaceResizeable.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/out/production/BT_interfaceResizeable/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/out/production/BT_interfaceResizeable/Resizeable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/out/production/BT_interfaceResizeable/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/out/production/BT_interfaceResizeable/Square.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/out/production/BT_interfaceResizeable/TestResizeable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/src/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/src/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/src/Resizeable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/src/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/src/Square.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_interfaceResizeable/src/TestResizeable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_phan_loai_tam_giac/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_phan_loai_tam_giac/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_phan_loai_tam_giac/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_phan_loai_tam_giac/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_phan_loai_tam_giac/BT_phan_loai_tam_giac.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_phan_loai_tam_giac/out/production/BT_phan_loai_tam_giac/TriangleClassifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_phan_loai_tam_giac/out/production/BT_phan_loai_tam_giac/TriangleClassifierTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_phan_loai_tam_giac/src/TriangleClassifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_phan_loai_tam_giac/src/TriangleClassifierTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_point_2D_3D/src/point2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_point_2D_3D/src/point2D_3D_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_point_2D_3D/src/point3D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/BT_quan_ly_san_pham.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/out/production/BT_quan_ly_san_pham/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/out/production/BT_quan_ly_san_pham/ProductManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/out/production/BT_quan_ly_san_pham/TestProductManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/src/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/src/ProductManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_quan_ly_san_pham/src/TestProductManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_refactoringTennisGame/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_refactoringTennisGame/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_refactoringTennisGame/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_refactoringTennisGame/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_refactoringTennisGame/BT_refactoringTennisGame.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_refactoringTennisGame/out/production/BT_refactoringTennisGame/TennisGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_refactoringTennisGame/out/production/BT_refactoringTennisGame/TennisGameTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_refactoringTennisGame/src/TennisGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_refactoringTennisGame/src/TennisGameTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim chuoi _tang _dan_co_do_dai_lon_nhat/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim chuoi _tang _dan_co_do_dai_lon_nhat/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim chuoi _tang _dan_co_do_dai_lon_nhat/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim chuoi _tang _dan_co_do_dai_lon_nhat/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim chuoi _tang _dan_co_do_dai_lon_nhat/BT_tim chuoi _tang _dan_co_do_dai_lon_nhat.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim chuoi _tang _dan_co_do_dai_lon_nhat/out/production/BT_tim chuoi _tang _dan_co_do_dai_lon_nhat/findStringAscending.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim chuoi _tang _dan_co_do_dai_lon_nhat/src/findStringAscending.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/out/production/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/findString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/out/production/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/out/production/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/out/production/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/src/findString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tim_chuoi_lien_tiep_co_do_dai_lon_nhat/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tinh_ngay_tiep_theo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tinh_ngay_tiep_theo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tinh_ngay_tiep_theo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tinh_ngay_tiep_theo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tinh_ngay_tiep_theo/BT_tinh_ngay_tiep_theo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tinh_ngay_tiep_theo/out/production/BT_tinh_ngay_tiep_theo/NextDayCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tinh_ngay_tiep_theo/out/test/BT_tinh_ngay_tiep_theo/NextDayCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tinh_ngay_tiep_theo/src/NextDayCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_tinh_ngay_tiep_theo/test/NextDayCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_ArrayList_theo_thu_vien/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_ArrayList_theo_thu_vien/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_ArrayList_theo_thu_vien/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_ArrayList_theo_thu_vien/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_ArrayList_theo_thu_vien/BT_trien_khai_ArrayList_theo_thu_vien.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_ArrayList_theo_thu_vien/out/production/BT_trien_khai_ArrayList_theo_thu_vien/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_ArrayList_theo_thu_vien/out/production/BT_trien_khai_ArrayList_theo_thu_vien/MyListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_ArrayList_theo_thu_vien/src/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_ArrayList_theo_thu_vien/src/MyListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_LinkedList_theo_thu_vien/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_LinkedList_theo_thu_vien/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_LinkedList_theo_thu_vien/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_LinkedList_theo_thu_vien/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_LinkedList_theo_thu_vien/BT_trien_khai_LinkedList_theo_thu_vien.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_LinkedList_theo_thu_vien/src/MyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/BT_trien_khai_Queue_sd_lien_ket_vong.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/out/production/BT_trien_khai_Queue_sd_lien_ket_vong/CircularLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/out/production/BT_trien_khai_Queue_sd_lien_ket_vong/CircularLinkedList$Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/out/production/BT_trien_khai_Queue_sd_lien_ket_vong/CircularLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/out/production/BT_trien_khai_Queue_sd_lien_ket_vong/demo$1TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/out/production/BT_trien_khai_Queue_sd_lien_ket_vong/demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/src/CircularLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/BT_trien_khai_Queue_sd_lien_ket_vong/src/demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/.idea/libraries/db_derby_10_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/CaseStudyModule2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/Manager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/category.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/product.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/sample/UIaddBook.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/sample/derby.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/out/production/CaseStudyModule2/sample/derbyclient.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/Desktop - Shortcut.lnk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/category.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/product.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/sample/DatabaseHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/CaseStudyModule2/src/sample/UIaddBook.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/ComparableCircle.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/out/production/ComparableCircle/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/out/production/ComparableCircle/ComparableCircle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/out/production/ComparableCircle/ComparableCircleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/out/production/ComparableCircle/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/src/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/src/ComparableCircle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/src/ComparableCircleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/ComparableCircle/src/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/JAVA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/KiemTraKetThucModule2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/contact.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/contacts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/out/production/KiemTraKetThucModule2/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/out/production/KiemTraKetThucModule2/ContactIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/out/production/KiemTraKetThucModule2/ContactManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/out/production/KiemTraKetThucModule2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/src/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/src/ContactIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/src/ContactManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/KiemTraKetThucModule2/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/Kiem_tra_tai_lop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/out/production/Kiem_tra_tai_lop/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/out/production/Kiem_tra_tai_lop/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/out/production/Kiem_tra_tai_lop/StudentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/out/production/Kiem_tra_tai_lop/testStudentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/src/StudentManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Kiem_tra_tai_lop/src/testStudentManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/LT_TaiLop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/category.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/expire.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/out/production/LT_TaiLop/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/out/production/LT_TaiLop/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/out/production/LT_TaiLop/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/out/production/LT_TaiLop/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/out/production/LT_TaiLop/StudentIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/out/production/LT_TaiLop/StudentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/out/production/LT_TaiLop/student.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/product.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/sell.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/src/StudentIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/src/StudentManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/src/student.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/LT_TaiLop/student.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/PointAndMoveablePoint/src/Moveable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/PointAndMoveablePoint/src/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/PointAndMoveablePoint/src/PointAndMoveableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/.idea/dictionaries/HN.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/BMApp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/BOOK.DAT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/BOOK.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/BRM.DAT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/BRM.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/READER.DAT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/READER.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/out/production/BMApp/BOOK.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/out/production/BMApp/BRM.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/out/production/BMApp/READER.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/out/production/BMApp/controller/ControllerUltility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/out/production/BMApp/controller/DataController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/out/production/BMApp/model/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/out/production/BMApp/model/BookReaderManagement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/out/production/BMApp/model/Reader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/out/production/BMApp/view/Example.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/out/production/BMApp/view/View.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/src/BOOK.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/src/BRM.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/src/READER.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/src/controller/ControllerUltility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/src/controller/DataController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/src/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/src/model/BookReaderManagement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/src/model/Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/src/view/Example.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/QuanLyThuVien/src/view/View.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Sample/demo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Sample/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/TH_ AnimalAndinterfaceEdible.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/out/production/TH_ AnimalAndinterfaceEdible/AbstractAndInterfaceTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/out/production/TH_ AnimalAndinterfaceEdible/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/out/production/TH_ AnimalAndinterfaceEdible/Apple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/out/production/TH_ AnimalAndinterfaceEdible/Chicken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/out/production/TH_ AnimalAndinterfaceEdible/Edible.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/out/production/TH_ AnimalAndinterfaceEdible/Fruit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/out/production/TH_ AnimalAndinterfaceEdible/Orange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/out/production/TH_ AnimalAndinterfaceEdible/Tiger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/src/AbstractAndInterfaceTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/src/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/src/Apple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/src/Chicken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/src/Edible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/src/Fruit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/src/Orange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ AnimalAndinterfaceEdible/src/Tiger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Access_modifier/am.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Access_modifier/src/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Access_modifier/src/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Access_modifier/src/Simple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CopyFileCoDungLuongLon/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CopyFileCoDungLuongLon/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CopyFileCoDungLuongLon/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CopyFileCoDungLuongLon/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CopyFileCoDungLuongLon/TH_CopyFileCoDungLuongLon.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CopyFileCoDungLuongLon/out/production/TH_CopyFileCoDungLuongLon/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CopyFileCoDungLuongLon/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CrawlDanhSachBaiHat/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CrawlDanhSachBaiHat/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CrawlDanhSachBaiHat/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CrawlDanhSachBaiHat/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CrawlDanhSachBaiHat/TH_CrawlDanhSachBaiHat.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CrawlDanhSachBaiHat/out/production/TH_CrawlDanhSachBaiHat/CrawlSongExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_CrawlDanhSachBaiHat/src/CrawlSongExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Debug_ung_dung_java/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Debug_ung_dung_java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Debug_ung_dung_java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Debug_ung_dung_java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Debug_ung_dung_java/TH_Debug_ung_dung_java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Debug_ung_dung_java/out/production/TH_Debug_ung_dung_java/DebugJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Debug_ung_dung_java/src/DebugJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_FileCalculator/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_HE_CAC_DOI_TUONG_HINH_HOC/src/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_HE_CAC_DOI_TUONG_HINH_HOC/src/CircleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_HE_CAC_DOI_TUONG_HINH_HOC/src/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_HE_CAC_DOI_TUONG_HINH_HOC/src/RectangleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_HE_CAC_DOI_TUONG_HINH_HOC/src/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_HE_CAC_DOI_TUONG_HINH_HOC/src/ShapeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_HE_CAC_DOI_TUONG_HINH_HOC/src/Square.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_HE_CAC_DOI_TUONG_HINH_HOC/src/SquareTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_LinkedList_don_gian/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_LinkedList_don_gian/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_LinkedList_don_gian/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_LinkedList_don_gian/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_LinkedList_don_gian/TH_LinkedList_don_gian.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_LinkedList_don_gian/out/production/TH_LinkedList_don_gian/MyLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_LinkedList_don_gian/out/production/TH_LinkedList_don_gian/MyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_LinkedList_don_gian/out/production/TH_LinkedList_don_gian/TestMyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_LinkedList_don_gian/src/MyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_LinkedList_don_gian/src/TestMyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_List_don_gian/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_List_don_gian/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_List_don_gian/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_List_don_gian/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_List_don_gian/TH_List_don_gian.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_List_don_gian/out/production/TH_List_don_gian/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_List_don_gian/out/production/TH_List_don_gian/MyListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_List_don_gian/src/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_List_don_gian/src/MyListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_RacingCars/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_RacingCars/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_RacingCars/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_RacingCars/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_RacingCars/TH_RacingCars.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_RacingCars/out/production/TH_RacingCars/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_RacingCars/out/production/TH_RacingCars/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_RacingCars/src/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_RacingCars/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SimpleCalculatorTesting/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SimpleCalculatorTesting/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SimpleCalculatorTesting/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SimpleCalculatorTesting/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SimpleCalculatorTesting/TH_SimpleCalculatorTesting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SimpleCalculatorTesting/out/production/TH_SimpleCalculatorTesting/SimpleCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SimpleCalculatorTesting/out/production/TH_SimpleCalculatorTesting/SimpleCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SimpleCalculatorTesting/src/SimpleCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SimpleCalculatorTesting/src/SimpleCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Static_property/TH_Static_property.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Static_property/out/production/TH_Static_property/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Static_property/out/production/TH_Static_property/TestStaticProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Static_property/src/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Static_property/src/TestStaticProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Su dung lop ArrayIndexOutOfBoundsException/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Su dung lop ArrayIndexOutOfBoundsException/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Su dung lop ArrayIndexOutOfBoundsException/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Su dung lop ArrayIndexOutOfBoundsException/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Su dung lop ArrayIndexOutOfBoundsException/TH_Su dung lop ArrayIndexOutOfBoundsException.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Su dung lop ArrayIndexOutOfBoundsException/out/production/TH_Su dung lop ArrayIndexOutOfBoundsException/ArrayExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_Su dung lop ArrayIndexOutOfBoundsException/src/ArrayExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SuDungLopNumberFormatException/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SuDungLopNumberFormatException/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SuDungLopNumberFormatException/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SuDungLopNumberFormatException/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SuDungLopNumberFormatException/TH_SuDungLopNumberFormatException.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SuDungLopNumberFormatException/out/production/TH_SuDungLopNumberFormatException/CalculationExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_SuDungLopNumberFormatException/src/CalculationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/.idea/artifacts/TH_TimeSystem_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/TH_TimeSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/out/artifacts/TH_TimeSystem_war_exploded/WEB-INF/classes/ServerTimeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/out/artifacts/TH_TimeSystem_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/out/artifacts/TH_TimeSystem_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/out/production/TH_TimeSystem/ServerTimeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/src/ServerTimeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TimeSystem/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/TH_TinhTongCacSoTrongText.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/out/production/TH_TinhTongCacSoTrongText/com/company/ReadFileExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TinhTongCacSoTrongText/src/com/company/ReadFileExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiAdapter/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiAdapter/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiAdapter/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiAdapter/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiAdapter/TH_TrienKhaiAdapter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiAdapter/out/production/TH_TrienKhaiAdapter/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiAdapter/out/production/TH_TrienKhaiAdapter/FileCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiAdapter/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiAdapter/src/FileCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiAdapter/src/FileCalculatorAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/TH_TrienKhaiFacade.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/out/production/TH_TrienKhaiFacade/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/out/production/TH_TrienKhaiFacade/Facebook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/out/production/TH_TrienKhaiFacade/LinkedIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/out/production/TH_TrienKhaiFacade/SocialMediaFacade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/out/production/TH_TrienKhaiFacade/SocialShare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/out/production/TH_TrienKhaiFacade/Twitter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/src/Facebook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/src/LinkedIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/src/SocialMediaFacade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/src/SocialShare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiFacade/src/Twitter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/TH_TrienKhaiObserver.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/src/BinObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/src/HexObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/src/Observer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/src/ObserverDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/src/OctObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiObserver/src/Subject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/TH_TrienKhaiProxy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/out/production/TH_TrienKhaiProxy/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/out/production/TH_TrienKhaiProxy/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/out/production/TH_TrienKhaiProxy/MathCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/out/production/TH_TrienKhaiProxy/MathCalculatorProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/src/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/src/MathCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiProxy/src/MathCalculatorProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiStrategy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiStrategy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiStrategy/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiStrategy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiStrategy/TH_TrienKhaiStrategy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiStrategy/src/Strategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiStrategy/src/StrategySolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/TH_TrienKhaiTemplateMethod.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/out/production/TH_TrienKhaiTemplateMethod/HamburgerMeal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/out/production/TH_TrienKhaiTemplateMethod/Meal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/out/production/TH_TrienKhaiTemplateMethod/TacoMeal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/out/production/TH_TrienKhaiTemplateMethod/TemplateMethodDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/src/HamburgerMeal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/src/Meal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/src/TacoMeal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_TrienKhaiTemplateMethod/src/TemplateMethodDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateAccount/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateAccount/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateAccount/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateAccount/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateAccount/TH_ValidateAccount.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateAccount/out/production/TH_ValidateAccount/AccountExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateAccount/out/production/TH_ValidateAccount/AccountExampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateAccount/src/AccountExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateAccount/src/AccountExampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateEmail/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateEmail/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateEmail/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateEmail/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateEmail/TH_ValidateEmail.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateEmail/out/production/TH_ValidateEmail/EmailExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateEmail/out/production/TH_ValidateEmail/EmailExampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateEmail/src/EmailExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_ValidateEmail/src/EmailExampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/TH_interfaceComparator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/out/production/TH_interfaceComparator/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/out/production/TH_interfaceComparator/CircleComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/out/production/TH_interfaceComparator/CircleComparatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/out/production/TH_interfaceComparator/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/src/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/src/CircleComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/src/CircleComparatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_interfaceComparator/src/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_phan_biet_HashMap_HashSet/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_phan_biet_HashMap_HashSet/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_phan_biet_HashMap_HashSet/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_phan_biet_HashMap_HashSet/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_phan_biet_HashMap_HashSet/TH_phan_biet_HashMap_HashSet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_phan_biet_HashMap_HashSet/out/production/TH_phan_biet_HashMap_HashSet/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_phan_biet_HashMap_HashSet/out/production/TH_phan_biet_HashMap_HashSet/StudentTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_phan_biet_HashMap_HashSet/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_phan_biet_HashMap_HashSet/src/StudentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_method/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_method/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_method/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_method/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_method/TH_refactoring_method.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_method/out/production/TH_refactoring_method/Cylinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_method/out/production/TH_refactoring_method/CylinderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_method/src/Cylinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_method/src/CylinderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/TH_refactoring_variable_const.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/out/production/TH_refactoring_variable_const/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/out/production/TH_refactoring_variable_const/CalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/out/production/TH_refactoring_variable_const/FizzBuzz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/src/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/src/CalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_refactoring_variable_const/src/FizzBuzz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/TH_sap_xep_Comparable_Comparator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/out/production/TH_sap_xep_Comparable_Comparator/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/out/production/TH_sap_xep_Comparable_Comparator/StudentTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/out/production/TH_sap_xep_Comparable_Comparator/ageComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/src/StudentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sap_xep_Comparable_Comparator/src/ageComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sd_HashMap_LinkedHashMap_TreeMap/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sd_HashMap_LinkedHashMap_TreeMap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sd_HashMap_LinkedHashMap_TreeMap/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sd_HashMap_LinkedHashMap_TreeMap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sd_HashMap_LinkedHashMap_TreeMap/TH_sd_HashMap_LinkedHashMap_TreeMap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sd_HashMap_LinkedHashMap_TreeMap/out/production/TH_sd_HashMap_LinkedHashMap_TreeMap/TestMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_sd_HashMap_LinkedHashMap_TreeMap/src/TestMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_static method/TH_static method.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_static method/out/production/TH_static method/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_static method/out/production/TH_static method/TestStaticMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_static method/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_static method/src/TestStaticMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_chon/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_chon/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_chon/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_chon/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_chon/TH_thuat_toan_sap_xep_chon.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_chon/out/production/TH_thuat_toan_sap_xep_chon/SelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_chon/src/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_noi_bot/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_noi_bot/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_noi_bot/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_noi_bot/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_noi_bot/TH_thuat_toan_sap_xep_noi_bot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_noi_bot/out/production/TH_thuat_toan_sap_xep_noi_bot/BubbleSortByStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_sap_xep_noi_bot/src/BubbleSortByStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/out/production/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/out/production/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/out/production/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/out/production/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/src/BinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_khong_de_quy/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/out/production/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/binarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/out/production/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/out/production/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/out/production/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/src/binarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_thuat_toan_tim_kiem_nhi_phan_sd_de_quy/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/TH_tim_kiem_nhi_phan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/out/production/TH_tim_kiem_nhi_phan/AbstractTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/out/production/TH_tim_kiem_nhi_phan/BST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/out/production/TH_tim_kiem_nhi_phan/TestBST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/out/production/TH_tim_kiem_nhi_phan/TreeNode$Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/out/production/TH_tim_kiem_nhi_phan/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/src/AbstractTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/src/BST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/src/TestBST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tim_kiem_nhi_phan/src/TreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/TH_tinh_do_phuc_tap_cua_thuat_toan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/out/production/TH_tinh_do_phuc_tap_cua_thuat_toan/AlgorithmComplexityTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/out/production/TH_tinh_do_phuc_tap_cua_thuat_toan/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/out/production/TH_tinh_do_phuc_tap_cua_thuat_toan/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/out/production/TH_tinh_do_phuc_tap_cua_thuat_toan/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/src/AlgorithmComplexityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tinh_do_phuc_tap_cua_thuat_toan/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_LinkedList/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_LinkedList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_LinkedList/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_LinkedList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_LinkedList/TH_tk_Stack_sd_LinkedList.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_LinkedList/out/production/TH_tk_Stack_sd_LinkedList/GenericStackClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_LinkedList/out/production/TH_tk_Stack_sd_LinkedList/MyGenericStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_LinkedList/src/GenericStackClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_LinkedList/src/MyGenericStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_mang/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_mang/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_mang/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_mang/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_mang/TH_tk_Stack_sd_mang.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_mang/out/production/TH_tk_Stack_sd_mang/MyStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_mang/out/production/TH_tk_Stack_sd_mang/StackClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_mang/src/MyStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TH_tk_Stack_sd_mang/src/StackClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/TK_TK_Triangle.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/out/production/TK_TK_Triangle/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/out/production/TK_TK_Triangle/ShapeTriangleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/out/production/TK_TK_Triangle/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/src/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/src/ShapeTriangleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/TK_TK_Triangle/src/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/Trien_khai_Queue_sd_ds_lien_ket.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/out/production/Trien_khai_Queue_sd_ds_lien_ket/LinkedListQueueClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/out/production/Trien_khai_Queue_sd_ds_lien_ket/MyLinkedListQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/out/production/Trien_khai_Queue_sd_ds_lien_ket/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/src/LinkedListQueueClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/src/MyLinkedListQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/Trien_khai_Queue_sd_ds_lien_ket/src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/absolute-number-calculator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/absolute-number-calculator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/absolute-number-calculator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/absolute-number-calculator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/absolute-number-calculator/absolute-number-calculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/absolute-number-calculator/out/production/absolute-number-calculator/AbsoluteNumberCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/absolute-number-calculator/out/test/absolute-number-calculator/AbsoluteNumberCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/absolute-number-calculator/src/AbsoluteNumberCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/absolute-number-calculator/test/AbsoluteNumberCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/JAVA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/JAVA/META-INF/JAVA.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Chuyen_doi_nhiet_do.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Chuyen_doi_tien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Dao_nguoc_phan_tu_mang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Dem_ky_tu_trong_chuoi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Dem_so_sv_thi_do.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Fan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Gop_mang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Hien_thi_20_SNT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Hien_thi_SNT_nho_hon_100.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Hien_thi_cac_loai_hinh.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Hien_thi_loi_chao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Khai_bao_sd_bien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Kiem_tra_nam_nhuan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Kiem_tra_so_nguyen_to.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/LinearEquationResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/META-INF/week1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Number_to_Word.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/QuadraticEquation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/StopWatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/TH_sd_toan_tu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/TH_tinh_so_ngay_trong_thang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Them_phan_tu_mang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Thiet_ke_menu_ung_dung.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Tim_gia_tri_lon_nhat_mang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Tim_gia_tri_nho_nhat_mang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Tim_gia_tri_trong_mang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Tim_phan_tu_lon_nhat_mang_2_chieu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Tim_phan_tu_nho_nhat_mang_2_chieu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Tim_uoc_chung_lon_nhat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Tinh_BMI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Tinh_tong_cot_mang_2_chieu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Tong_duong_cheo_chinh_ma_tran.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Ung_dung_tinh_tien_lai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/out/production/week1/Xoa_phan_tu_khoi_mang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Chuyen_doi_nhiet_do.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Chuyen_doi_tien.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Dao_nguoc_phan_tu_mang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Dem_ky_tu_trong_chuoi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Dem_so_sv_thi_do.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Fan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Gop_mang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Hien_thi_20_SNT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Hien_thi_SNT_nho_hon_100.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Hien_thi_cac_loai_hinh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Hien_thi_loi_chao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Khai_bao_sd_bien.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Kiem_tra_nam_nhuan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Kiem_tra_so_nguyen_to.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/LinearEquationResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Number_to_Word.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/QuadraticEquation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/StopWatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/SystemTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/TH_sd_toan_tu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/TH_tinh_so_ngay_trong_thang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Them_phan_tu_mang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Thiet_ke_menu_ung_dung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Tim_gia_tri_lon_nhat_mang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Tim_gia_tri_nho_nhat_mang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Tim_gia_tri_trong_mang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Tim_phan_tu_lon_nhat_mang_2_chieu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Tim_phan_tu_nho_nhat_mang_2_chieu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Tim_uoc_chung_lon_nhat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Tinh_BMI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Tinh_tong_cot_mang_2_chieu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Tong_duong_cheo_chinh_ma_tran.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Ung_dung_tinh_tien_lai.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/src/Xoa_phan_tu_khoi_mang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/week_1/week1/week1.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1hjtdogc93hqGIG1aLAvLbJexcH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql.8&#10;mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\demo-KA\spring_jpa_customer_management\src\main\webapp" />
+      <recent name="D:\demo-KA\spring_jpa_customer_management\src\main\java\com\codegym\cms" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.571" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.571" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : com.codegym : spring_jpa_customer_management-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_spring_jpa_customer_management_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51576" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.codegym : spring_jpa_customer_management-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a6204d1-bbc7-4884-b6a7-06572c6be1ed" name="Default Changelist" comment="" />
+      <created>1600536418951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600536418951</updated>
+      <workItem from="1600536421574" duration="1487000" />
+      <workItem from="1600537974129" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600537606402">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="137" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1366.738@0.30.1366.738" timestamp="1600537606402" />
+    <state width="905" height="182" key="GridCell.Tab.0.bottom" timestamp="1600537727823">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1600537727823" />
+    <state width="905" height="182" key="GridCell.Tab.0.center" timestamp="1600537727823">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1600537727823" />
+    <state width="905" height="182" key="GridCell.Tab.0.left" timestamp="1600537727823">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1600537727823" />
+    <state width="905" height="182" key="GridCell.Tab.0.right" timestamp="1600537727823">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1600537727823" />
+    <state width="905" height="182" key="GridCell.Tab.1.bottom" timestamp="1600537727824">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.1.bottom/0.30.1366.738@0.30.1366.738" timestamp="1600537727824" />
+    <state width="905" height="182" key="GridCell.Tab.1.center" timestamp="1600537727823">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.1.center/0.30.1366.738@0.30.1366.738" timestamp="1600537727823" />
+    <state width="905" height="182" key="GridCell.Tab.1.left" timestamp="1600537727823">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.1.left/0.30.1366.738@0.30.1366.738" timestamp="1600537727823" />
+    <state width="905" height="182" key="GridCell.Tab.1.right" timestamp="1600537727823">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.1.right/0.30.1366.738@0.30.1366.738" timestamp="1600537727823" />
+    <state width="905" height="182" key="GridCell.Tab.2.bottom" timestamp="1600537727824">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.2.bottom/0.30.1366.738@0.30.1366.738" timestamp="1600537727824" />
+    <state width="905" height="182" key="GridCell.Tab.2.center" timestamp="1600537727824">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.2.center/0.30.1366.738@0.30.1366.738" timestamp="1600537727824" />
+    <state width="905" height="182" key="GridCell.Tab.2.left" timestamp="1600537727824">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.2.left/0.30.1366.738@0.30.1366.738" timestamp="1600537727824" />
+    <state width="905" height="182" key="GridCell.Tab.2.right" timestamp="1600537727824">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.2.right/0.30.1366.738@0.30.1366.738" timestamp="1600537727824" />
+    <state x="163" y="30" key="SettingsEditor" timestamp="1600536749678">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="163" y="30" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1600536749678" />
+  </component>
+</project>
