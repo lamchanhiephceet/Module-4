@@ -1,9 +1,10 @@
 package com.codegym.cms;
 
-import com.codegym.cms.repository.CustomerRepository;
-import com.codegym.cms.repository.CustomerRepositoryImpl;
+import com.codegym.cms.formatter.ProvinceFormatter;
 import com.codegym.cms.service.CustomerService;
-import com.codegym.cms.service.CustomerServiceImpl;
+import com.codegym.cms.service.ProvinceService;
+import com.codegym.cms.service.impl.CustomerServiecImpl;
+import com.codegym.cms.service.impl.ProvinceServiceImpl;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
@@ -11,6 +12,8 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.format.FormatterRegistry;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -28,11 +31,13 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
 @EnableWebMvc
 @EnableTransactionManagement
+@EnableJpaRepositories("com.codegym.cms.repository")
 @ComponentScan("com.codegym.cms")
 public class ApplicationConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
@@ -44,15 +49,14 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     }
 
     @Bean
-    public CustomerRepository customerRepository(){
-        return new CustomerRepositoryImpl();
+    public CustomerService customerService(){
+        return new CustomerServiecImpl();
     }
 
     @Bean
-    public CustomerService customerService(){
-        return new CustomerServiceImpl();
+    public ProvinceService provinceService(){
+        return new ProvinceServiceImpl();
     }
-
 
     //Thymeleaf Configuration
     @Bean
@@ -99,7 +103,7 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     }
 
     @Bean
-    public DriverManagerDataSource dataSource(){
+    public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/cms");
@@ -122,4 +126,8 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         return properties;
     }
 
+    @Override
+    public void addFormatters(FormatterRegistry registry) {
+        registry.addFormatter(new ProvinceFormatter(applicationContext.getBean(ProvinceService.class)));
+    }
 }
