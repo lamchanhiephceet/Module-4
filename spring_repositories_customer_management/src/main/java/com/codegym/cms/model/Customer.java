@@ -51,4 +51,12 @@ public class Customer {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public Province getProvince() {
+        return province;
+    }
+
+    public void setProvince() {
+        this.province = province;
+    }
 }
