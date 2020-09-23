@@ -75,23 +75,26 @@ public class FormRegister implements Validator {
         }
 
         String firstName = formRegister.getFirstName();
-
-        if(!firstName.matches("@Size(min=5,max=45)")) {
+        ValidationUtils.rejectIfEmpty(errors, "firstName", "firstName.empty");
+        if(!firstName.matches("^[a-z0-9_-]{5,45}$")) {
             errors.rejectValue("firstName", "firstName.matches");
         }
 
         String lastName = formRegister.getLastName();
-        if(!"@Size(min=5,max=45)".matches(lastName)){
+        ValidationUtils.rejectIfEmpty(errors, "lastName", "lastName.empty");
+        if(!lastName.matches("^[a-z0-9_-]{5,45}$")){
             errors.rejectValue("lastName","lastName.matches");
         }
 
         String age = formRegister.getAge();
-        if(!age.matches("@Range(min=18,max=120)")) {
+        ValidationUtils.rejectIfEmpty(errors, "age", "age.empty");
+        if(!age.matches("^[0-9_-]{18,120}$")) {
             errors.rejectValue("age","age.matches");
         }
 
         String email = formRegister.getEmail();
-        if(!email.matches("@Email")){
+        ValidationUtils.rejectIfEmpty(errors, "email", "email.empty");
+        if(!email.matches( "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$")){
             errors.rejectValue("email","email.matches");
         }
     }
