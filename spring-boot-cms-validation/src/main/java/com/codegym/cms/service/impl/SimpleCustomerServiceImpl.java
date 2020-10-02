@@ -1,16 +1,15 @@
 package com.codegym.cms.service.impl;
 
-
-
 import com.codegym.cms.model.Customer;
 import com.codegym.cms.service.CustomerService;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static java.util.Arrays.asList;
-
+@Service
 public class SimpleCustomerServiceImpl implements CustomerService {
     private static List<Customer> customers;
     private static long autoIncreaseId = 0;

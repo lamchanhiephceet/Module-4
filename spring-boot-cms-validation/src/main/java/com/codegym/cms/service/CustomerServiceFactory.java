@@ -3,6 +3,7 @@ package com.codegym.cms.service;
 import com.codegym.cms.service.impl.SimpleCustomerServiceImpl;
 
 
+
 public class CustomerServiceFactory {
     private static CustomerService singleton;
 

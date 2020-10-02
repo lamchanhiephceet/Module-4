@@ -9,10 +9,10 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class DemoApplication {
 
-	@Bean
-	public CustomerService customerService(){
-		return new SimpleCustomerServiceImpl();
-	}
+//	@Bean
+//	public CustomerService customerService(){
+//		return new SimpleCustomerServiceImpl();
+//	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
