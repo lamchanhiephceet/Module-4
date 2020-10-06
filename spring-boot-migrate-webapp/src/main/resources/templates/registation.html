@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Regis</title>
+</head>
+<body>
+<h2>Registation</h2>
+<form th:action="@{/regis}" method='POST' th:object="user">
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td><input type='text' name='username'></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type='password' name='password' /></td>
+        </tr>
+        <tr>
+            <td><input name="submit" type="submit" value="Đăng ký"/></td>
+        </tr>
+    </table>
+</form>
+</body>
