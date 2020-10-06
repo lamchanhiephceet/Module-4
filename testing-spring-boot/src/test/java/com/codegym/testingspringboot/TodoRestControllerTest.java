@@ -21,7 +21,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 @RunWith(SpringRunner.class)
-// Bạn cần cung cấp lớp Controller cho @WebMvcTest
+
 @WebMvcTest(TodoRestController.class)
 public class TodoRestControllerTest {
 
