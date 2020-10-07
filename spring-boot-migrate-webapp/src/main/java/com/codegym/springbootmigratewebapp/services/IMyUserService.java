@@ -1,6 +1,7 @@
-package com.codegym.services;
+package com.codegym.springbootmigratewebapp.services;
 
-import com.codegym.models.MyUser;
+
+import com.codegym.springbootmigratewebapp.models.MyUser;
 
 import java.util.List;
 

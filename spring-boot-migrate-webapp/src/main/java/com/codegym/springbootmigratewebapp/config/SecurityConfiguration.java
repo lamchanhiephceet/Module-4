@@ -1,6 +1,7 @@
-package com.codegym.config;
+package com.codegym.springbootmigratewebapp.config;
 
-import com.codegym.services.IMyUserService;
+
+import com.codegym.springbootmigratewebapp.services.IMyUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

@@ -1,12 +1,11 @@
-package com.codegym.controller;
+package com.codegym.springbootmigratewebapp.controller;
 
-import com.codegym.models.MyUser;
-import com.codegym.services.IMyUserService;
+
+import com.codegym.springbootmigratewebapp.models.MyUser;
+import com.codegym.springbootmigratewebapp.services.IMyUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.method.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -35,12 +34,12 @@ public class HomeController {
         return "test";
     }
 
-    @GetMapping("/regis")
+    @GetMapping("/registation")
     public ModelAndView register(){
-        return new ModelAndView("regis", "user", new MyUser());
+        return new ModelAndView("registation", "user", new MyUser());
     }
 
-    @PostMapping("/regis")
+    @PostMapping("/registation")
     public String save(MyUser user){
         iMyUserService.saveUser(user);
         return "redirect:/";

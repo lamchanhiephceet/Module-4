@@ -1,17 +1,21 @@
-package com.codegym.services;
+package com.codegym.springbootmigratewebapp.services;
 
-import com.codegym.models.MyUser;
-import com.codegym.models.Role;
-import com.codegym.repositories.IMyUserRepository;
+
+import com.codegym.springbootmigratewebapp.models.MyUser;
+import com.codegym.springbootmigratewebapp.models.Role;
+import com.codegym.springbootmigratewebapp.repositories.IMyUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Service
 public class MyUserService implements IMyUserService, UserDetailsService {
 
     @Autowired

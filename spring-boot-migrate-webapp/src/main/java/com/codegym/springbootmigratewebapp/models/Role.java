@@ -1,4 +1,4 @@
-package com.codegym.models;
+package com.codegym.springbootmigratewebapp.models;
 
 import org.springframework.security.core.GrantedAuthority;
 

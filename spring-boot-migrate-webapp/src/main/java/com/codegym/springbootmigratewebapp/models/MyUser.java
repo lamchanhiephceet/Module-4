@@ -1,9 +1,8 @@
-package com.codegym.models;
+package com.codegym.springbootmigratewebapp.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import java.util.List;
 
 @Entity
 public class MyUser {

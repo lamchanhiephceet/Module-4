@@ -1,4 +1,4 @@
-package com.codegym.config;
+package com.codegym.springbootmigratewebapp.config;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
