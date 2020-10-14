@@ -8,13 +8,9 @@ import java.util.Optional;
 public interface IGeneralService<T> {
     Page<T> findAll(Pageable pageable);
 
-    void save(T entity);
+    Optional<T> findById(Integer id);
 
-    void update(T entity);
+    void save(T object);
 
-    Optional<T> findById(Long id);
-
-    void deleteById(Long id);
-
-    void delete(T entity);
+    void delete(Integer id);
 }

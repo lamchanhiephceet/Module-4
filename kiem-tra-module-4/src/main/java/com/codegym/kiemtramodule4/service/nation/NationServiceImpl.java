@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
 import java.util.Optional;
 
 @Service
 public class NationServiceImpl implements NationService {
-
     @Autowired
     private NationRepository nationRepository;
 
@@ -20,27 +20,17 @@ public class NationServiceImpl implements NationService {
     }
 
     @Override
-    public void save(Nation entity) {
-        nationRepository.save(entity);
-    }
-
-    @Override
-    public void update(Nation entity) {
-        nationRepository.save(entity);
-    }
-
-    @Override
-    public Optional<Nation> findById(Long id) {
+    public Optional<Nation> findById(Integer id) {
         return nationRepository.findById(id);
     }
 
     @Override
-    public void deleteById(Long id) {
-        nationRepository.deleteById(id);
+    public void save(Nation object) {
+        nationRepository.save(object);
     }
 
     @Override
-    public void delete(Nation entity) {
-        nationRepository.delete(entity);
+    public void delete(Integer id) {
+        nationRepository.deleteById(id);
     }
 }

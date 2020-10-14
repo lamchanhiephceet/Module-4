@@ -8,9 +8,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+
 @Service
 public class CityServiceImpl implements CityService {
-
     @Autowired
     private CityRepository cityRepository;
 
@@ -21,27 +21,17 @@ public class CityServiceImpl implements CityService {
     }
 
     @Override
-    public void save(City entity) {
-        cityRepository.save(entity);
-    }
-
-    @Override
-    public void update(City entity) {
-        cityRepository.save(entity);
-    }
-
-    @Override
-    public Optional<City> findById(Long id) {
+    public Optional<City> findById(Integer id) {
         return cityRepository.findById(id);
     }
 
     @Override
-    public void deleteById(Long id) {
-        cityRepository.deleteById(id);
+    public void save(City object) {
+        cityRepository.save(object);
     }
 
     @Override
-    public void delete(City entity) {
-        cityRepository.delete(entity);
+    public void delete(Integer id) {
+        cityRepository.deleteById(id);
     }
 }
